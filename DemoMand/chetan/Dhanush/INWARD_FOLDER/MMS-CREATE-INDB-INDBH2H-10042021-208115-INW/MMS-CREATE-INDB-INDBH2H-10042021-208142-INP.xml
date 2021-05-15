@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pain.009.001.01">
+	<MndtInitnReq>
+		<GrpHdr>
+			<MsgId>INDB30020020300000103</MsgId>
+			<CreDtTm>2020-02-04T16:13:11
+			</CreDtTm>
+			<InstgAgt>
+				<FinInstnId>
+					<ClrSysMmbId>
+						<MmbId>INDB0000098</MmbId>
+					</ClrSysMmbId>
+											<Nm>Indusind Bank</Nm>
+									
+				</FinInstnId>
+			</InstgAgt>
+			<InstdAgt>
+				<FinInstnId>
+					<ClrSysMmbId>
+						<MmbId>FDRL0000098</MmbId>
+					</ClrSysMmbId>
+											<Nm>State Bank of India</Nm>
+										
+				</FinInstnId>
+			</InstdAgt>
+		</GrpHdr>
+		<Mndt>
+		<MndtId>INDB000234116789945</MndtId>
+			<MndtReqId>INDB0001234116789945</MndtReqId>
+			<Tp>
+			    				<SvcLvl>
+					<Prtry>L001</Prtry>
+				</SvcLvl>
+								<LclInstrm>
+					<Prtry>DEBIT</Prtry>
+				</LclInstrm>
+			</Tp>
+			<Ocrncs>
+				<SeqTp>RCUR</SeqTp>
+				<Frqcy>MNTH</Frqcy>
+				<FrstColltnDt>2020-01-21</FrstColltnDt>
+								<FnlColltnDt>2022-01-07</FnlColltnDt>
+							</Ocrncs>
+							<ColltnAmt Ccy="INR">340000.00</ColltnAmt>
+										<Cdtr>
+				<Nm>Nitesh Broadway</Nm>
+			</Cdtr>
+			<CdtrAcct>
+				<Id>
+					<Othr>
+						<Id>INDB00506000029727</Id>
+					</Othr>
+				</Id>
+			</CdtrAcct>
+			<CdtrAgt>
+				<FinInstnId>
+					<ClrSysMmbId>
+						<MmbId>INDB0000098</MmbId>
+					</ClrSysMmbId>
+											<Nm>Indusind Bank</Nm>
+										
+				</FinInstnId>
+			</CdtrAgt>
+			<Dbtr>
+			
+							<Nm>Dinesh B</Nm>
+								<Id>
+					<PrvtId>
+						<Othr>
+
+														<Id>4265</Id>
+																				</Othr>
+					</PrvtId>
+				</Id>
+				<CtctDtls>
+																								</CtctDtls>
+			</Dbtr>
+			<DbtrAcct>
+				<Id>
+					<Othr>
+						<Id>611690072</Id>
+					</Othr>
+				</Id>
+				<Tp>
+					<Prtry>SAVINGS</Prtry>
+				</Tp>
+			</DbtrAcct>
+			<DbtrAgt>
+				<FinInstnId>
+					<ClrSysMmbId>
+						<MmbId>FDRL0000098</MmbId>
+					</ClrSysMmbId>
+											<Nm>State Bank of India</Nm>
+										
+					</FinInstnId>
+			</DbtrAgt>
+		</Mndt>
+	</MndtInitnReq>
+</Document>
