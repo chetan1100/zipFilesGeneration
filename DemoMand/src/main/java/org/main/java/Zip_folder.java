@@ -15,20 +15,20 @@ public class Zip_folder{
 	List <String> fileList = new ArrayList<String>();
 
 	/* OUTWARD IN_PUT_FOLDER_PATH*/
-	private static String IN_PUT_OUTWARD_PAIN009= "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/OUTWARD_FOLDER/MMS-CREATE-INDB-INDBH2H-26032021-000110-INP ";
-	private static String IN_PUT_OUTWARD_ACK="/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/OUTWARD_FOLDER/MMS-CREATE-INDB-INDBH2H-06052020-000005-INP-ACK";
+	private static String IN_PUT_OUTWARD_PAIN009= "/home/user/eclipse-workspace/DemoMand/chetan/OUTWARD_FOLDER/MMS-CREATE-INDB-INDBH2H-26032021-000110-INP ";
+	private static String IN_PUT_OUTWARD_ACK="/home/user/eclipse-workspace/DemoMand/chetan/OUTWARD_FOLDER/MMS-CREATE-INDB-INDBH2H-06052020-000005-INP-ACK";
 
 	/* INWARD IN_PUT_FOLDER_PATH*/
-	private static String IN_PUT_INWARD_PAIN009="/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/INWARD_FOLDER/MMS-CREATE-INDB-INDBH2H-10042021-208115-INW";
+	private static String IN_PUT_INWARD_PAIN009="/home/user/eclipse-workspace/DemoMand/chetan/INWARD_FOLDER/MMS-CREATE-INDB-INDBH2H-10042021-208115-INW";
 
 	/* PAYMENT ACH_FOLDER_PATH*/
-	private static String IN_PUT_INP="/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/PAYMENT/INP_FOLDER";
-	private static String IN_PUT_ACK="/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/PAYMENT/ACK_FOLDER";
-	private static String IN_PUT_RES="/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/PAYMENT/RES_FOLDER";
-	private static String IN_PUT_DONE="/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/PAYMENT/RES.DONE";
-	private static String IN_PUT_SIGNED="/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/PAYMENT/SIGNED";
-	private static String IN_PUT_UNSIGNED="/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/PAYMENT/UNSIGNED";
-	private static String IN_PUT_ENCRYPT="/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/PAYMENT/ENCRYPT";
+	private static String IN_PUT_INP="/home/user/eclipse-workspace/DemoMand/chetan/PAYMENT/INP_FOLDER";
+	private static String IN_PUT_ACK="/home/user/eclipse-workspace/DemoMand/chetan/PAYMENT/ACK_FOLDER";
+	private static String IN_PUT_RES="/home/user/eclipse-workspace/DemoMand/chetan/PAYMENT/RES_FOLDER";
+	private static String IN_PUT_DONE="/home/user/eclipse-workspace/DemoMand/chetan/PAYMENT/RES.DONE";
+	private static String IN_PUT_SIGNED="/home/user/eclipse-workspace/DemoMand/chetan/PAYMENT/SIGNED";
+	private static String IN_PUT_UNSIGNED="/home/user/eclipse-workspace/DemoMand/chetan/PAYMENT/UNSIGNED";
+	private static String IN_PUT_ENCRYPT="/home/user/eclipse-workspace/DemoMand/chetan/PAYMENT/ENCRYPT";
 
 	public static void main( String[] args ){
 
@@ -57,7 +57,7 @@ public class Zip_folder{
 
 						for(int i=1;i<=count;i++) {
 							String  random_value = random.nextInt(800000)+"-INP";
-							OUT_PUT_PAIN009 = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/OUTWARD/pain009/MMS-CREATE-INDB-INDBH2H-10042021-"+random_value+".zip";
+							OUT_PUT_PAIN009 = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/OUTWARD/pain009/MMS-CREATE-INDB-INDBH2H-10042021-"+random_value+".zip";
 							Zip_folder appZip = new Zip_folder();
 							appZip.generateFileList_PAIN009(new File(IN_PUT_OUTWARD_PAIN009));
 							appZip.zipIt_Pain009(OUT_PUT_PAIN009);
@@ -69,7 +69,7 @@ public class Zip_folder{
 
 						for(int i=1;i<=count;i++) {
 							String  random_value = random.nextInt(800000)+"-INP.zip";
-							OUT_PUT_PAIN009 = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/OUTWARD/pain009/MMS-CREATE-INDB-INDBH2H-10042021-"+random_value+".done";
+							OUT_PUT_PAIN009 = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/OUTWARD/pain009/MMS-CREATE-INDB-INDBH2H-10042021-"+random_value+".done";
 							Zip_folder appZip = new Zip_folder();
 							appZip.generateFileList_PAIN009(new File(IN_PUT_OUTWARD_PAIN009));
 							appZip.zipIt_Pain009(OUT_PUT_PAIN009);
@@ -80,7 +80,7 @@ public class Zip_folder{
 					String OUT_PUT_ACK="";
 					for(int i=1;i<=count;i++) {
 						String  random_value = random.nextInt(1000000)+"-INP-ACK";
-						OUT_PUT_ACK = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/OUTWARD/ACK/MMS-CREATE-INDB-INDBH2H-06052020-"+random_value+".zip";
+						OUT_PUT_ACK = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/OUTWARD/ACK/MMS-CREATE-INDB-INDBH2H-06052020-"+random_value+".zip";
 						Zip_folder appZip = new Zip_folder();
 						appZip.generateFileList_ACK(new File(IN_PUT_OUTWARD_ACK));
 						appZip.zipIt_ACK(OUT_PUT_ACK);
@@ -96,7 +96,7 @@ public class Zip_folder{
 					String INWARD_OUT_PUT_PAIN009="";
 					for(int i=1;i<=count;i++) {
 						String  random_value = random.nextInt(1000000)+"-INW";
-						INWARD_OUT_PUT_PAIN009 = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/INWARD/pain009/MMS-CREATE-INDB-INDBH2H-10042021-"+random_value+".zip";
+						INWARD_OUT_PUT_PAIN009 = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/INWARD/pain009/MMS-CREATE-INDB-INDBH2H-10042021-"+random_value+".zip";
 						Zip_folder appZip = new Zip_folder();
 						appZip.generateFileList_INWARD_PAIN009(new File(IN_PUT_INWARD_PAIN009));
 						appZip.zipIt_INWARD_PAIN009(INWARD_OUT_PUT_PAIN009);
@@ -108,7 +108,7 @@ public class Zip_folder{
 					String INWARD_OUT_PUT_PAIN009="";
 					for(int i=1;i<=count;i++) {
 						String  random_value = random.nextInt(1000000)+"-INW.zip";
-						INWARD_OUT_PUT_PAIN009 = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/INWARD/pain009/MMS-CREATE-INDB-INDBH2H-10042021-"+random_value+".done";
+						INWARD_OUT_PUT_PAIN009 = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/INWARD/pain009/MMS-CREATE-INDB-INDBH2H-10042021-"+random_value+".done";
 						Zip_folder appZip = new Zip_folder();
 						appZip.generateFileList_INWARD_PAIN009(new File(IN_PUT_INWARD_PAIN009));
 						appZip.zipIt_INWARD_PAIN009(INWARD_OUT_PUT_PAIN009);
@@ -136,7 +136,7 @@ public class Zip_folder{
 					String PAYMENT_OUT_PUT_INP="";
 					for(int i=1;i<=count;i++) {
 						String  random_value = random.nextInt(1000000)+"-INP";
-						PAYMENT_OUT_PUT_INP = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/PAYMENT/Flux/INP/ACH-DR-INDB-INDBH2H-07042021-"+random_value+".txt";
+						PAYMENT_OUT_PUT_INP = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/PAYMENT/Flux/INP/ACH-DR-INDB-INDBH2H-07042021-"+random_value+".txt";
 						Zip_folder appZip = new Zip_folder();
 						appZip.generateFileList_PAYMENT_FLUX_ACH(new File(IN_PUT_INP));
 						appZip.TXT_PAYMENT_FLUX_ACH(PAYMENT_OUT_PUT_INP);
@@ -149,7 +149,7 @@ public class Zip_folder{
 					String PAYMENT_OUT_PUT_ACK="";
 					for(int i=1;i<=count;i++) {
 						String  random_value = random.nextInt(1000000)+"-ACK";
-						PAYMENT_OUT_PUT_ACK = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/PAYMENT/Flux/ACK/ACH-DR-INDB-INDBH2H-16022021-"+random_value+".xml";
+						PAYMENT_OUT_PUT_ACK = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/PAYMENT/Flux/ACK/ACH-DR-INDB-INDBH2H-16022021-"+random_value+".xml";
 						Zip_folder appZip = new Zip_folder();
 						appZip.generateFileList_PAYMENT_FLUX_ACK(new File(IN_PUT_ACK));
 						appZip.XML_PAYMENT_FLUX_ACK(PAYMENT_OUT_PUT_ACK);
@@ -161,7 +161,7 @@ public class Zip_folder{
 					String OUT_PUT_ENCRYPT="";
 					for(int i=1;i<=count;i++) {
 						String  random_value = random.nextInt(1000000)+"-RES";
-						OUT_PUT_ENCRYPT = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/PAYMENTS/RES/MMS-CREATE-INDB-INDBH2H-06052020-"+random_value+".zip";
+						OUT_PUT_ENCRYPT = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/PAYMENTS/RES/MMS-CREATE-INDB-INDBH2H-06052020-"+random_value+".zip";
 						Zip_folder appZip = new Zip_folder();
 						appZip.generateFileList_ENCRYPT(new File(IN_PUT_ENCRYPT));
 						appZip.zipIt_ENCRYPT(OUT_PUT_ENCRYPT);
@@ -176,7 +176,7 @@ public class Zip_folder{
 						String PAYMENT_OUT_PUT_RES="";
 						for(int i=1;i<=count;i++) {
 							String  random_value = random.nextInt(1000000)+"-RTN";
-							PAYMENT_OUT_PUT_RES = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/PAYMENT/Flux/RES/signed/ACH-DR-INDB-INDBH2H-08022021-"+random_value+".txt";
+							PAYMENT_OUT_PUT_RES = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/PAYMENT/Flux/RES/signed/ACH-DR-INDB-INDBH2H-08022021-"+random_value+".txt";
 							Zip_folder appZip = new Zip_folder();
 							appZip.generateFileList_PAYMENT_SIGNED(new File(IN_PUT_SIGNED));
 							appZip.TXT_PAYMENT_SIGNED(PAYMENT_OUT_PUT_RES);
@@ -189,7 +189,7 @@ public class Zip_folder{
 						String PAYMENT_OUT_PUT_RES="";
 						for(int i=1;i<=count;i++) {
 							String  random_value = random.nextInt(1000000)+"-RTN";
-							PAYMENT_OUT_PUT_RES = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/PAYMENT/Flux/RES/unsigned/ACH-DR-INDB-INDBH2H-08022021-"+random_value+".txt";
+							PAYMENT_OUT_PUT_RES = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/PAYMENT/Flux/RES/unsigned/ACH-DR-INDB-INDBH2H-08022021-"+random_value+".txt";
 							Zip_folder appZip = new Zip_folder();
 							appZip.generateFileList_PAYMENT_UNSIGNED(new File(IN_PUT_UNSIGNED));
 							appZip.TXT_PAYMENT_UNSIGNED(PAYMENT_OUT_PUT_RES);
@@ -203,7 +203,7 @@ public class Zip_folder{
 					String PAYMENT_OUT_PUT_DONE="";
 					for(int i=1;i<=count;i++) {
 						String  random_value = random.nextInt(1000000)+"-RES.txt";
-						PAYMENT_OUT_PUT_DONE = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/PAYMENT/Flux/DONE/ACH-DR-INDB-INDBH2H-16022021-"+random_value+".done";
+						PAYMENT_OUT_PUT_DONE = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/PAYMENT/Flux/DONE/ACH-DR-INDB-INDBH2H-16022021-"+random_value+".done";
 						Zip_folder appZip = new Zip_folder();
 						appZip.generateFileList_PAYMENT_FLUX_DONE(new File(IN_PUT_DONE));
 						appZip.TXT_PAYMENT_FLUX_DONE(PAYMENT_OUT_PUT_DONE);
@@ -226,7 +226,7 @@ public class Zip_folder{
 						String PAYMENT_OUT_PUT_RES="";
 						for(int i=1;i<=count;i++) {
 							String  random_value = random.nextInt(1000000)+"-RTN";
-							PAYMENT_OUT_PUT_RES = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/PAYMENT/Non-flux/RES/Signed/ACH-DR-INDB-INDBIBL-16022021-"+random_value+".txt";
+							PAYMENT_OUT_PUT_RES = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/PAYMENT/Non-flux/RES/Signed/ACH-DR-INDB-INDBIBL-16022021-"+random_value+".txt";
 							Zip_folder appZip = new Zip_folder();
 							appZip.generateFileList_PAYMENT_SIGNED(new File(IN_PUT_SIGNED));
 							appZip.TXT_PAYMENT_SIGNED(PAYMENT_OUT_PUT_RES);
@@ -239,7 +239,7 @@ public class Zip_folder{
 						String PAYMENT_OUT_PUT_RES="";
 						for(int i=1;i<=count;i++) {
 							String  random_value = random.nextInt(1000000)+"-RTN";
-							PAYMENT_OUT_PUT_RES = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/PAYMENT/Non-flux/RES/Unsigned/ACH-DR-INDB-INDBIBL-16022021-"+random_value+".txt";
+							PAYMENT_OUT_PUT_RES = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/PAYMENT/Non-flux/RES/Unsigned/ACH-DR-INDB-INDBIBL-16022021-"+random_value+".txt";
 							Zip_folder appZip = new Zip_folder();
 							appZip.generateFileList_PAYMENT_UNSIGNED(new File(IN_PUT_UNSIGNED));
 							appZip.TXT_PAYMENT_UNSIGNED(PAYMENT_OUT_PUT_RES);
@@ -253,7 +253,7 @@ public class Zip_folder{
 					String PAYMENT_OUT_PUT_DONE="";
 					for(int i=1;i<=count;i++) {
 						String  random_value = random.nextInt(1000000)+"-RES.txt";
-						PAYMENT_OUT_PUT_DONE = "/home/user/eclipse-workspace/DemoMand/chetan/Dhanush/ibl/PAYMENT/Non-flux/DONE/ACH-DR-INDB-INDBIBL-16022021-"+random_value+".done";
+						PAYMENT_OUT_PUT_DONE = "/home/user/eclipse-workspace/DemoMand/chetan/ibl/PAYMENT/Non-flux/DONE/ACH-DR-INDB-INDBIBL-16022021-"+random_value+".done";
 						Zip_folder appZip = new Zip_folder();
 						appZip.generateFileList_PAYMENT_NON_FLUX_DONE(new File(IN_PUT_DONE));
 						appZip.TXT_PAYMENT_NON_FLUX_DONE(PAYMENT_OUT_PUT_DONE);
